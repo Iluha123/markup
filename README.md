@@ -23,8 +23,11 @@ Materiak effect:
 
 * Button. add attribute "jx-btn" to your button. 
 * Placeholder. Structure you can see in "main/ThemeOne/ThemeOne.html" and
-    <div my-placeholder>
-      <input id="code" class="inp-one" type="text"/>
-      <label for="code">Postal Code</label>
-    </div>
+```html
+  <div my-placeholder>
+    <input id="code" class="inp-one" type="text"/>
+    <label for="code">Postal Code</label>
+  </div>
+```
+    
 
