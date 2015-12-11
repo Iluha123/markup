@@ -15,7 +15,7 @@ Theme Create:
 -----
 
 * Build you theme file "build-theme.less" lies In folder ThemeCreate
-* File "themeCreate.less" create base theme. You can wath how to fast make your theme, more detail in coments
+* File "themeCreate.less" create base theme. You can see how to fast make your theme, more detail in coments
 * Files that describes element, lies in folder ThemeCreate.
 
 Materiak effect:
