@@ -1,0 +1,45 @@
+/**
+ * this file create theme
+ */
+//@placeholder-color: #a6a6ad;
+
+@import '../../index.less';
+@import "border-create.less";
+@import "input-create.less";
+@import "font-placeholder-create.less";
+@import "button-create.less";
+
+.theme-create(@name: base){
+  .theme-@{name}{
+    flex: 1;
+    input.inp-@{name},
+    select.sel-@{name},
+    button.btn-@{name}{
+      /*@font-weight: 400; @font-size: 20px; @line-height: 22px; @font-family: 'Roboto'*/
+      .base-font(400; 16px; 20px; 'Roboto');
+    }
+    .custom-button{
+      .custom-button-create(#000; #FFF;'\f0d7');
+    }
+    input.inp-@{name},
+    select.sel-@{name}{
+      /*@height: 40px; @border-radius: 0px; @background: none; @color: #1e1e1e*/
+      .base-style-input(34px; 0; none; #1e1e1e);
+      /**
+       * if one border @what: top; @px: 1px; @color: #dadada; @focus-color: #3d67f1
+       * if four border @what: all
+       * if no border @what: none
+       */
+      .border-create(bottom; 1px; #dadada);
+    }
+    button.btn-@{name}{
+      .base-font(500; 16px; 20px; 'Roboto');
+      /*@height: 40px; @background: #FFF; @color: #000; @padding: 13px 17px; @border-radius: 0px*/
+      .button-create(38px; #f9f9f9; #191919; 5px 17px; 2px);
+      /*base less generator box-shadow*/
+      .box-shadow(0 4px 3px 0 rgba(0,0,0,0.3));
+      .border-create(none);
+    }
+  }
+}
+.theme-create(one);

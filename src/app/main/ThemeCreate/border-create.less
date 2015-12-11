@@ -1,0 +1,13 @@
+.border-create(@what: top; @px: 1px; @color: #dadada; @focus-color: #3d67f1){
+  border: 0;
+  border-@{what}: @px solid @color;
+  &:focus{
+    border-color: #3d67f1;
+  }
+}
+.border-create(@what: top; @px: 1px; @color: #dadada) when (@what = all){
+  border: @px solid @color;
+}
+.border-create(@what: top; @px: 1px; @color: #dadada) when (@what = none){
+  border: 0;
+}

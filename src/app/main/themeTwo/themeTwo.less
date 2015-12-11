@@ -1,0 +1,62 @@
+.theme-two{
+  padding: 55px 120px 30px 70px;
+  .bg-big{
+    width: 100%;
+  }
+  .bg-small{
+    width: 50%;
+    min-width: 280px;
+    button.btn-two{
+      width: 100%;
+    }
+  }
+  .drop{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 3px 3px 0;
+    background: #38474f;
+    height: 100%;
+    width: 75px;
+    &::after{
+      font: normal normal normal 24px/1 FontAwesome;
+      content: '\f078';
+      display: block;
+      position: absolute;
+      color: #FFF;
+      top: 50%;
+      margin-top: -12px;
+      left: 50%;
+      margin-left: -12px;
+    }
+  }
+}
+.pr{
+  position: relative;
+}
+@media(max-width: 997px){
+  .theme-two{
+    padding: 40px 50px 30px 50px;
+    .bg-big{
+      min-width: 250px;
+    }
+    .bg-small {
+      min-width: 250px;
+    }
+  }
+}
+@media(max-width: 760px){
+  .theme-two{
+    input.inp-two,
+    select.sel-two{
+      padding: 0 30px;
+      font-size: 18px;
+      height: 70px;
+    }
+    button.btn-two{
+      font-size: 18px;
+      height: 65px;
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+.button-create(@height: 40px; @background: #FFF; @color: #000; @padding: 13px 17px;@border-radius: 0px){
+  padding: @padding;
+  background: @background;
+  color: @color;
+  outline: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in 0s;
+  margin: 15px 0;
+  height: @height;
+  border-radius: @border-radius;
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    background: darken(@background, 10%);
+  }
+}

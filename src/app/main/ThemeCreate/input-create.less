@@ -1,0 +1,28 @@
+.base-style-input(@height: 40px; @border-radius: 0px; @background: none; @color: #1e1e1e) {
+  border-radius: @border-radius;
+  background: @background;
+  color: @color;
+  width: 100%;
+  height: @height;
+  display: block;
+  margin: 15px 0;
+  &:focus{
+    outline: none;
+  }
+}
+
+.custom-button-create(@color: #000; @background: #FFF; @content: '\f0d7'){
+  position: relative;
+  &::after{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: @content;
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color: @color;
+    background: @background;
+  }
+}

@@ -1,0 +1,42 @@
+@import 'themeCreate.less';
+@import "font-placeholder-create.less";
+/**
+ * To create your theme
+ * In brace you must write name of theme
+ */
+
+.theme-create(one);
+.theme-create(two);
+
+/**
+ * You can redefine base style in css
+ * for every elements adds class like
+ * <input class="inp-name-theme">
+ * also you can use mixing to create that you'll need
+ * all examples in file 'themeCreate.less'
+ */
+
+.theme-one{
+  .placeholder-create(#191919; one);
+}
+
+.theme-two {
+  input.inp-two,
+  select.sel-two,
+  button.btn-two{
+    .base-font(500; 22px; 26px; 'Roboto');
+  }
+  input.inp-two,
+  select.sel-two{
+    .base-style-input(80px; 3px; #f8f8f8; #a6a6ad);
+    .box-shadow(1px 1px 3px 0 rgba(0,0,0,0.15));
+    .border-create(none);
+    padding: 0 50px;
+  }
+  .placeholder-create(#a6a6ad; two);
+  button.btn-two{
+    .button-create(75px; #84b262; #ffffff; 20px 15px; 3px);
+    .box-shadow(2px 2px 4px 0 rgba(0,0,0,0.25));
+    .border-create(none);
+  }
+}
