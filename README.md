@@ -22,6 +22,9 @@ Materiak effect:
 -----
 
 * Button. add attribute "jx-btn" to your button. 
+```html
+<button class="btn-one" jx-btn type="button">Button</button>
+```
 * Placeholder. Structure you can see in "main/ThemeOne/ThemeOne.html" and
 ```html
   <div my-placeholder>
