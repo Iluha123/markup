@@ -6,7 +6,11 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController() {
-    //var vm = this;
+  function MainController($timeout) {
+    var vm = this;
+    vm.startVeiw = false;
+    $timeout(function() {
+      vm.startVeiw = true;
+    }, 300);
   }
 })();

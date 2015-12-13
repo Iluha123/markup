@@ -56,9 +56,24 @@
 @grey-bg: #f0f0f0;
 @focus-one: #3d67f1;
 
-
-
-
+.view-animate{
+  opacity: 1;
+}
+.view-animate.ng-enter{
+  .trans{
+    transition: all 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s;
+  }
+}
+.view-animate.ng-enter, .view-animate.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s ;
+  opacity: 0;
+}
+.view-animate.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.view-animate.ng-leave.ng-leave-active {
+  opacity: 0;
+}
 ul, li{
   padding: 0;
   margin: 0;
