@@ -20,12 +20,14 @@
     /** @ngInject */
     function postLink(scope, element){
       scope.value = false;
-      if(element[0].children[0].children[0].children[0].tagName === 'INPUT') {
+      var input = element.find('input');
+      var select = element.find('select');
+      if(input) {
         element[0].addEventListener('input', focusInp);
         scope.$on("$destroy", function() {
           element[0].removeEventListener('input', focusInp);
         });
-      } else if(element[0].children[0].children[0].children[0].tagName === 'SELECT'){
+      } else if(select){
         element[0].addEventListener('change', focusInp);
         scope.$on("$destroy", function() {
           element[0].removeEventListener('change', focusInp);

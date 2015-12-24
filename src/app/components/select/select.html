@@ -1,0 +1,14 @@
+<div class="select custom-button">
+  <div class="select-input" ng-click="select.isOpen = !select.isOpen"><p class="select-choice" ng-bind="select.item"></p></div>
+  <ul class="select-items" ng-class="{'open': select.isOpen}">
+    <li class="select-item"
+        ng-repeat="item in select.selectItems track by $index"
+        ng-click="select.selectItem($index)"
+        ng-class="{'active': select.select === $index}">
+      <span ng-bind="item"></span>
+    </li>
+  </ul>
+</div>
+<div class="my-placeholder-select" ng-if="select.showPlace" ng-class="{active: select.selePlace || select.isOpen}">
+  <p ng-bind="select.xtPlaceholder"></p>
+</div>
