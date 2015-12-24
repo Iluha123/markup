@@ -26,7 +26,7 @@ Theme Create:
 there is variables which you can set
 * Files that describes element, lies in folder ThemeCreate.
 
-Materiak effect:
+Material effect:
 -----
 
 * Button. add attribute "jx-btn" to your button. 
