@@ -3,9 +3,9 @@
 
   angular
     .module('testX1')
-    .controller('selectController', selectController);
+    .controller('SelectController', SelectController);
 
-  function selectController() {
+  function SelectController() {
     var vm = this;
 
     vm.isOpen = false;

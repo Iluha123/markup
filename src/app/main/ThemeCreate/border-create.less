@@ -1,4 +1,4 @@
-.border-create(@what: top; @px: 1px; @color: #dadada; @focus-color: #3d67f1){
+.border-create(@what: top; @px: 1px; @color: #dadada; @focus-color: #3d67f1)  when not (@what = none) and not(@what = all){
   border: 0;
   border-@{what}: @px solid @color;
   &:focus{

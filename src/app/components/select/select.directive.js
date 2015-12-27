@@ -10,7 +10,7 @@
       restrict: 'AE',
       templateUrl: 'app/components/select/select.html',
       scope: {},
-      controller: 'selectController',
+      controller: 'SelectController',
       controllerAs: 'select',
       bindToController: {
         selectItems: '=',

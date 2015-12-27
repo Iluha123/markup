@@ -22,6 +22,9 @@
     .base-font(600; 16px; 20px; 'Questrial');
     .base-style-input(34px; 0; none; #1e1e1e);
     .border-create(bottom; 1px; #dadada);
+    .select-items{
+      .box-shadow(0 4px 3px 0 rgba(0,0,0,0.3));
+    }
     .select-item{
       .button-create(38px; #f9f9f9; #191919; 5px 17px; 0px);
       margin: 0;
@@ -44,6 +47,29 @@
     .box-shadow(1px 1px 3px 0 rgba(0,0,0,0.15));
     .border-create(none);
     padding: 0 50px;
+  }
+  .select{
+    .base-style-input(80px; 3px; #f8f8f8; #a6a6ad);
+    .box-shadow(1px 1px 3px 0 rgba(0,0,0,0.15));
+    .border-create(none);
+    .base-font(500; 22px; 26px; 'Roboto');
+    .select-input{
+      padding: 0 50px;
+    }
+    .select-items{
+      border-radius: 3px;
+      overflow: hidden;
+      .box-shadow(1px 1px 3px 0 rgba(0,0,0,0.15));
+      .select-item{
+        background: #f8f8f8;
+        height: 60px;
+        padding: 0 50px;
+        &.active,
+        &:hover{
+          background: #38474f;
+        }
+      }
+    }
   }
   .placeholder-create(#a6a6ad; two);
   button.btn-two{

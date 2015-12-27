@@ -7,6 +7,7 @@
 
   /** @ngInject */
   function ThemeTwoController() {
-    //var vm = this;
+    var vm = this;
+    vm.items = ['USA', 'England', 'France', 'Ukraine'];
   }
 })();

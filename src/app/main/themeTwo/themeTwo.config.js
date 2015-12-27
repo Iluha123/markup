@@ -14,7 +14,7 @@
         url: '/theme2',
         templateUrl: 'app/main/themeTwo/themeTwo.html',
         controller: 'ThemeTwoController',
-        controllerAs: 'one'
+        controllerAs: 'two'
       });
 
   }
